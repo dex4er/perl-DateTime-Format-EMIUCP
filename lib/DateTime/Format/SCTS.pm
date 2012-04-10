@@ -11,6 +11,15 @@ DateTime::Format::SCTS - parse Service Centre time-stamp DDMMYYhhmmss format
   print $dt->ymd; # 2012-02-03
   print $dt->hms; # 06:55:30
 
+=head1 DESCRIPTION
+
+SCTS is a string of 12 numeric characters which represents Service Centre
+time-stamp in DDMMYYhhmmss format.  This is a part of EMI-UCP protocol message
+primarily used to connect to short message service centres (SMSCs) for mobile
+telephones.
+
+See EMI-UCP Interface 5.2 Specification for further explanations.
+
 =for readme stop
 
 =cut
@@ -21,6 +30,19 @@ our $VERSION = '0.01';
 
 use strict;
 use warnings;
+
+=head1 METHODS
+
+=over
+
+=item DateTime I<$dt> = $fmt->parse_datetime(Str I<$scts>)
+
+Given a string in the pattern specified in the constructor, this method will
+return a new DateTime object.
+
+If given a string that doesn't match the pattern, the formatter will croak.
+
+=cut
 
 use DateTime::Format::Builder (
     parsers => {
@@ -34,6 +56,7 @@ use DateTime::Format::Builder (
     }
 );
 
+
 sub _fix_year {
     my %args = @_;
     my ($date, $p) = @args{qw( input parsed )};
@@ -41,12 +64,23 @@ sub _fix_year {
     return 1;
 };
 
+
+=item Str I<$scts> = $fmt->format_datetime(DateTime I<$dt>)
+
+Given a DateTime object, this methods returns a string formatted in the
+object's format.
+
+=back
+
+=cut
+
 sub format_datetime {
     my ($self, $dt) = @_;
     return sprintf '%02d%02d%02d%02d%02d%02d',
         $dt->day, $dt->month, $dt->year % 100,
         $dt->hour, $dt->minute, $dt->second;
 };
+
 
 1;
 
