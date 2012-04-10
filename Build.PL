@@ -7,7 +7,7 @@ use warnings;
 
 use Module::Build;
 
-my $module = 'DateTime::Format::SCTS';
+my $module = 'DateTime::Format::EMIUCP';
 
 (my $dist = $module) =~ s/::/-/g;
 

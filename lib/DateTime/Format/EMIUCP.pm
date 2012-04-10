@@ -1,22 +1,22 @@
-package DateTime::Format::SCTS;
+package DateTime::Format::EMIUCP;
 
 =head1 NAME
 
-DateTime::Format::SCTS - Parse Service Centre time-stamp DDMMYYhhmmss format
+DateTime::Format::EMIUCP - Parse Service Center time-stamp ddMMyyHHmmss format
 
 =head1 SYNOPSIS
 
-  use DateTime::Format::SCTS;
-  my $dt = DateTime::Format::SCTS->parse_datetime('030212065530');
+  use DateTime::Format::EMIUCP;
+  my $dt = DateTime::Format::EMIUCP->parse_datetime('030212065530');
   print $dt->ymd; # 2012-02-03
   print $dt->hms; # 06:55:30
 
 =head1 DESCRIPTION
 
-SCTS is a string of 12 numeric characters which represents Service Centre
-time-stamp in DDMMYYhhmmss format.  This is a part of EMI-UCP protocol message
-primarily used to connect to short message service centres (SMSCs) for mobile
-telephones.
+SCTS is a string of 12 numeric characters which represents Service Center
+time-stamp in ddMMyyHHmmss format.  This is a part of EMI-UCP protocol
+message. EMI-UCP protocol is primarily used to connect to short message
+service centers (SMSCs) for mobile telephones.
 
 See EMI-UCP Interface 5.2 Specification for further explanations.
 
@@ -105,10 +105,10 @@ L<DateTime>.
 =head1 BUGS
 
 If you find the bug or want to implement new features, please report it at
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=DateTime-Format-SCTS>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=DateTime-Format-EMIUCP>
 
 The code repository is available at
-L<http://github.com/dex4er/perl-DateTime-Format-SCTS>
+L<http://github.com/dex4er/perl-DateTime-Format-EMIUCP>
 
 =head1 AUTHOR
 
