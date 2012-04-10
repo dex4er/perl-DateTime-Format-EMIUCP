@@ -2,7 +2,7 @@ package DateTime::Format::SCTS;
 
 =head1 NAME
 
-DateTime::Format::SCTS - parse Service Centre time-stamp DDMMYYhhmmss format
+DateTime::Format::SCTS - Parse Service Centre time-stamp DDMMYYhhmmss format
 
 =head1 SYNOPSIS
 
