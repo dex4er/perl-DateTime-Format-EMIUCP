@@ -26,10 +26,10 @@ See EMI-UCP Interface 5.2 Specification for further explanations.
 
 use 5.006;
 
-our $VERSION = '0.01';
-
 use strict;
 use warnings;
+
+our $VERSION = '0.01';
 
 =head1 METHODS
 
@@ -100,7 +100,15 @@ L<DateTime::Format::Builder>
 
 =head1 SEE ALSO
 
-L<http://github.com/dex4er/perl-DateTime-Format-SCTS>, L<DateTime>.
+L<DateTime>.
+
+=head1 BUGS
+
+If you find the bug or want to implement new features, please report it at
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=DateTime-Format-SCTS>
+
+The code repository is available at
+L<http://github.com/dex4er/perl-DateTime-Format-SCTS>
 
 =head1 AUTHOR
 
