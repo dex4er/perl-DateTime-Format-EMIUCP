@@ -30,7 +30,7 @@
    "provides" : {
       "DateTime::Format::EMIUCP" : {
          "file" : "lib/DateTime/Format/EMIUCP.pm",
-         "version" : "0.01"
+         "version" : "0.0101"
       }
    },
    "release_status" : "stable",
@@ -45,5 +45,5 @@
          "url" : "http://github.com/dex4er/perl-DateTime-Format-EMIUCP"
       }
    },
-   "version" : "0.01"
+   "version" : "0.0101"
 }
