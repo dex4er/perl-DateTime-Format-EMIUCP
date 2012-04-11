@@ -11,7 +11,7 @@ $PERL Build.PL
 rm -f MANIFEST
 $PERL Build manifest
 
-$PERL Build distdir
+$PERL Build distsign
 diff -u -I^SIGNATURE MANIFEST *-[0-9]*.[0-9]*/MANIFEST
 
 cd *-[0-9]*.[0-9]*
@@ -22,5 +22,7 @@ $PERL Build test
 $PERL -MApp::Prove -e '$app=App::Prove->new; $app->process_args(qw(-Iblib/lib xt)); $app->run;'
 
 $PERL Build dist
+
+cpansign -v
 
 mv *.tar.gz ..
