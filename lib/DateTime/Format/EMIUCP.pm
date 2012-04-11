@@ -40,6 +40,8 @@ our $VERSION = '0.0101';
 Given a string in the pattern specified in the constructor, this method will
 return a new DateTime object.
 
+Year number below 70 means the date before year 2000.
+
 If given a string that doesn't match the pattern, the formatter will croak.
 
 =cut
