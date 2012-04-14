@@ -9,7 +9,7 @@ $SIG{__WARN__} = sub { local $Carp::CarpLevel = 1; Carp::confess("Warning: ", @_
 
 use Test::More tests => 5;
 
-BEGIN { use_ok 'DateTime::Format::EMIUCP' }
+BEGIN { use_ok 'DateTime::Format::EMIUCP::VP' }
 
 my $dt = DateTime->new(
     year      => 2012,
@@ -23,4 +23,4 @@ my $dt = DateTime->new(
 isa_ok $dt, 'DateTime';
 is $dt->ymd, '2012-02-03', 'date';
 is $dt->hms, '06:55:30', 'time';
-is(DateTime::Format::EMIUCP->format_datetime($dt), '030212065530', 'format_datetime');
+is(DateTime::Format::EMIUCP::VP->format_datetime($dt), '0302120655', 'format_datetime');
