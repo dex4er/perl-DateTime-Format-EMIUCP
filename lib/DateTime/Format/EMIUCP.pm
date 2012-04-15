@@ -33,8 +33,6 @@ in ddMMyyHHmm format.
 
 See EMI-UCP Interface 5.2 Specification for further explanations.
 
-=for readme stop
-
 =cut
 
 use 5.006;
@@ -88,8 +86,6 @@ sub _fix_year {
 1;
 
 __END__
-
-=for readme continue
 
 =head1 PREREQUISITES
 
