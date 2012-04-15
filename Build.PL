@@ -24,6 +24,7 @@ my $build = Module::Build->new(
     },
     auto_configure_requires => 0,
     create_makefile_pl      => 'traditional',
+    create_readme           => 1,
     create_license          => 1,
     recursive_test_files    => 0,
     add_to_cleanup          => [
