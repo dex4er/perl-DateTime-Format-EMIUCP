@@ -29,28 +29,27 @@ DESCRIPTION
     See EMI-UCP Interface 5.2 Specification for further explanations.
 
 PREREQUISITES
-        * DateTime::Format::Builder
+    * DateTime::Format::Builder
 
 SEE ALSO
-        DateTime::Format::EMIUCP::DDT, DateTime::Format::EMIUCP::SCTS,
-        DateTime::Format::EMIUCP::VP, DateTime.
+    DateTime::Format::EMIUCP::DDT, DateTime::Format::EMIUCP::SCTS,
+    DateTime::Format::EMIUCP::VP, DateTime.
 
 BUGS
-        If you find the bug or want to implement new features, please report
-        it at
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=DateTime-Format-EMIUCP
+    If you find the bug or want to implement new features, please report it
+    at http://rt.cpan.org/NoAuth/Bugs.html?Dist=DateTime-Format-EMIUCP
 
-        The code repository is available at
-        http://github.com/dex4er/perl-DateTime-Format-EMIUCP
+    The code repository is available at
+    http://github.com/dex4er/perl-DateTime-Format-EMIUCP
 
 AUTHOR
-        Piotr Roszatycki <dexter@cpan.org>
+    Piotr Roszatycki <dexter@cpan.org>
 
 LICENSE
-        Copyright (c) 2012 Piotr Roszatycki <dexter@cpan.org>.
+    Copyright (c) 2012 Piotr Roszatycki <dexter@cpan.org>.
 
-        This is free software; you can redistribute it and/or modify it
-        under the same terms as perl itself.
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as perl itself.
 
-        See http://dev.perl.org/licenses/artistic.html
+    See http://dev.perl.org/licenses/artistic.html
 

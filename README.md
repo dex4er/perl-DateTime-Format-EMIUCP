@@ -44,7 +44,7 @@ If given a string that doesn't match the pattern, the formatter will croak.
 
 # PREREQUISITES
 
-    - [DateTime::Format::Builder](http://search.cpan.org/perldoc?DateTime::Format::Builder)
+- [DateTime::Format::Builder](http://search.cpan.org/perldoc?DateTime::Format::Builder)
 
 # SEE ALSO
 

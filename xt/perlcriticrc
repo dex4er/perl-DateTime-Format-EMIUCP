@@ -33,3 +33,5 @@ allow = all
 
 [TestingAndDebugging::ProhibitProlongedStrictureOverride]
 statements = 12
+
+[-Variables::ProtectPrivateVars]

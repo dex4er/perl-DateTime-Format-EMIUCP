@@ -57,6 +57,8 @@ Year number below 70 means the date before year 2000.
 
 If given a string that doesn't match the pattern, the formatter will croak.
 
+=back
+
 =cut
 
 use DateTime::Format::Builder (
