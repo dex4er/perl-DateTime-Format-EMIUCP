@@ -15,19 +15,33 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 ec8317e8e467820aebb95cf06b7c244e62103b36 Build.PL
-SHA1 bbae1031e307d554279aa541a91edad49d52e17d Changes
+SHA1 932f87932b9331fc2acf045301564091ee837b03 Changes
 SHA1 39d4369e877ca8afd2c5736d89d21b67976f2d07 LICENSE
-SHA1 07628d07f9c7dfceb2abf5b2bc0905c5eef93867 MANIFEST
+SHA1 2ce2cbb42271a27a142046ec88c2d4fda6fb5bcc MANIFEST
 SHA1 c3a34543c726b0d9c39e90592d1db5ae07b6f1b3 MANIFEST.SKIP
-SHA1 b0d6fe0babb640588597c4f688db417b0f5376c2 META.json
-SHA1 fee763d34b8e900adf60a0e759298e21f92c5e23 META.yml
-SHA1 6107e005dea2c9af22aef5b1d965fb8bddc1d17d Makefile.PL
-SHA1 d5d428ebb6e2375d56a6b59f7630ad9a1c035426 README
-SHA1 3888fb0cb13e4777bdaa81aafbdd65831ab805c8 lib/DateTime/Format/EMIUCP.pm
-SHA1 d17447e9238f2bafa4eba6dc04d56cda522fac2c t/010_parse.t
-SHA1 8b3c3c126bf4912dfafcd5eb59e09dffe965dfe1 t/020_format.t
-SHA1 f65cb5707bf1aa7a042d29ede5705e361da3179c t/030_parse_error.t
-SHA1 abec3fa7149e59f9f36680c5a49dfbbebd9d6ecc t/test.pl
+SHA1 16ea562660491d5662e2dc6dde7e20583df9decd META.json
+SHA1 b2aaf02b10db4d18e1ca84779352ee3db1cfa8dc META.yml
+SHA1 3b40215ee449791858c504e5f7c5bf3be72da0c2 Makefile.PL
+SHA1 c3b3e772297b15f09bbf29467779106ff5ea3813 README
+SHA1 2c6541f5d0bc80de8a3731e094a4a2a7eb64958c README.md
+SHA1 4502f8466db596ce89b90cd5db19c4b6629ceb01 examples/dt2emiucp.pl
+SHA1 b440fcbe4924e2c00226193fb5871fea5ce6e070 examples/emiucp2dt.pl
+SHA1 6a216d62bd4590e715ecc0e7d3d6ee561ed556a5 lib/DateTime/Format/EMIUCP.pm
+SHA1 ae4b9ff96679da1f5c131d08f192d43d717baed8 lib/DateTime/Format/EMIUCP/DDT.pm
+SHA1 1d578b8e79a757b88c3b23bbc8bcaa6515ddf57b lib/DateTime/Format/EMIUCP/SCTS.pm
+SHA1 820d9a37374c65a394e7877175d5e024ae222dc1 lib/DateTime/Format/EMIUCP/VP.pm
+SHA1 d17447e9238f2bafa4eba6dc04d56cda522fac2c t/110_parse_emiucp.t
+SHA1 f65cb5707bf1aa7a042d29ede5705e361da3179c t/120_parse_error_emiucp.t
+SHA1 1ea9735656ecf155e4ce466becc86e075065ebc1 t/210_parse_scts.t
+SHA1 af825d5c2cd687fd9f303ad387a4a6736951da6e t/220_parse_error_scts.t
+SHA1 c7c969efe53cbcb3efc3ad1cc7a7cbadfff2ce75 t/230_format_scts.t
+SHA1 5bc720f93ea4053fb3fe7bbb695a7e53ef8af867 t/310_parse_ddt.t
+SHA1 fd98a5568af0c4ebe5c53e731acfcca3efce975c t/320_parse_error_ddt.t
+SHA1 76edf0ae334ba32dcd6b53223535f7bb24c5eaaa t/330_format_ddt.t
+SHA1 91f1e40a9ccc832e98ebc96473c22eb7f2926d23 t/410_parse_vp.t
+SHA1 835408d36b4e912ca0bab6132dfeb3efdfb6f61d t/420_parse_error_vp.t
+SHA1 56261d3cfb37208ddfd8ea311ef3d894b2f62bed t/430_format_vp.t
+SHA1 8259fd967411a9d13ee842b1adb8913153fc39f1 t/test.pl
 SHA1 90353a99ac0f719b6f3e58029804d8556cedc2ab xt/check_changes.t
 SHA1 1c27e5840b0154e44120bc2edc02fbb507c76819 xt/consistent_version_numbers.t
 SHA1 67bb4c141ea95809f3db2d526ce91d9e6d894756 xt/copyright.t
@@ -36,16 +50,16 @@ SHA1 f5aac658ae1888964274e68d179413782082b7ad xt/distribution.t
 SHA1 44147122d52fef90ab3a2c65ebba4f89342174f8 xt/kwalitee.t
 SHA1 6e7f9dde7560793bcb40acc41561e07d163ad6d1 xt/minimumversion.t
 SHA1 e8daa0c73cfc304c240fad2d2c2b1b628175a89d xt/perlcritic.t
-SHA1 60e137a38d4857dc797f0202770af780bdec3cc8 xt/perlcriticrc
+SHA1 812a4f6e2d01d22de9f32fb69b1d446224ac6dfe xt/perlcriticrc
 SHA1 46aa111935ff192343c30b72d28da1a71ef4abf0 xt/pod_coverage.t
 SHA1 bef7d46eb5cbc3e67956d4e823ec199f41ab9268 xt/pod_spell.t
-SHA1 3495808057c801f88bea0acae14a9219541c4d86 xt/pod_spellrc
+SHA1 be3f32942acd87f331a0edb59ecfa0a7cac8719d xt/pod_spellrc
 SHA1 87cb53d4ad0162a872d5c70013fc41719e030555 xt/pod_syntax.t
 SHA1 a38994922fda6d64e2ee75198fadc464a221fea9 xt/signature.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iEYEARECAAYFAk+FhBoACgkQhMHHe8CxClsVygCfcd7VBsYQ7ZdRTOGs62dL/4q2
-cgYAnj3jeCRgle1cDNxWkqD74SrNbUmJ
-=Yhsq
+iEYEARECAAYFAk+LVKwACgkQhMHHe8CxClvNnQCfamtHvaXVMXs7FkXGou08xowD
+GSwAoJSdf5hSDoHhs9nlwH7QR/LqZKG8
+=wnNT
 -----END PGP SIGNATURE-----

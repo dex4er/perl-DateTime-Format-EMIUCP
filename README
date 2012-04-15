@@ -1,18 +1,30 @@
 NAME
-    DateTime::Format::EMIUCP - Parse Service Center time-stamp ddMMyyHHmmss
-    format
+    DateTime::Format::EMIUCP - Parse time formats for EMI-UCP protocol
 
 SYNOPSIS
       use DateTime::Format::EMIUCP;
-      my $dt = DateTime::Format::EMIUCP->parse_datetime('030212065530');
-      print $dt->ymd; # 2012-02-03
-      print $dt->hms; # 06:55:30
+
+      my $scts = DateTime::Format::EMIUCP->parse_datetime('030212065530');
+      print $scts->ymd; # 2012-02-03
+      print $scts->hms; # 06:55:30
+
+      my $vp = DateTime::Format::EMIUCP->parse_datetime('0302120655');
+      print $vp->ymd; # 2012-02-03
+      print $vp->hms; # 06:55:00
 
 DESCRIPTION
+    These formats are part of EMI-UCP protocol message. EMI-UCP protocol is
+    primarily used to connect to short message service centers (SMSCs) for
+    mobile telephones.
+
     SCTS is a string of 12 numeric characters which represents Service
-    Center time-stamp in ddMMyyHHmmss format. This is a part of EMI-UCP
-    protocol message. EMI-UCP protocol is primarily used to connect to short
-    message service centers (SMSCs) for mobile telephones.
+    Center time-stamp in ddMMyyHHmmss format.
+
+    DDT is a string of 10 numeric characters which represents deferred
+    delivery time in ddMMyyHHmm format.
+
+    VP is a string of 10 numeric characters which represents validity period
+    time in ddMMyyHHmm format.
 
     See EMI-UCP Interface 5.2 Specification for further explanations.
 
@@ -20,7 +32,8 @@ PREREQUISITES
     * DateTime::Format::Builder
 
 SEE ALSO
-    DateTime.
+    DateTime::Format::EMIUCP::DDT, DateTime::Format::EMIUCP::SCTS,
+    DateTime::Format::EMIUCP::VP, DateTime.
 
 BUGS
     If you find the bug or want to implement new features, please report it

@@ -1,6 +1,8 @@
 CPAN
 DateTime
+ddMMyyHHmm
 ddMMyyHHmmss
+DDT
 EMI
 Piotr
 Roszatycki
@@ -9,3 +11,4 @@ SMSCs
 Str
 UCP
 versioned
+VP

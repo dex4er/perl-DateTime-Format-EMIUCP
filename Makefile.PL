@@ -3,15 +3,15 @@ require 5.006;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'PL_FILES' => {},
-  'INSTALLDIRS' => 'site',
   'NAME' => 'DateTime::Format::EMIUCP',
-  'EXE_FILES' => [],
   'VERSION_FROM' => 'lib/DateTime/Format/EMIUCP.pm',
   'PREREQ_PM' => {
-                   'Test::More' => 0,
+                   'DateTime::Format::Builder' => 0,
                    'Test::Exception' => 0,
-                   'DateTime::Format::Builder' => 0
-                 }
+                   'Test::More' => 0
+                 },
+  'INSTALLDIRS' => 'site',
+  'EXE_FILES' => [],
+  'PL_FILES' => {}
 )
 ;

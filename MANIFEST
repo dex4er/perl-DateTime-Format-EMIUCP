@@ -1,6 +1,11 @@
 Build.PL
 Changes
+examples/dt2emiucp.pl
+examples/emiucp2dt.pl
 lib/DateTime/Format/EMIUCP.pm
+lib/DateTime/Format/EMIUCP/DDT.pm
+lib/DateTime/Format/EMIUCP/SCTS.pm
+lib/DateTime/Format/EMIUCP/VP.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
@@ -8,9 +13,18 @@ MANIFEST.SKIP
 META.json
 META.yml
 README
-t/010_parse.t
-t/020_format.t
-t/030_parse_error.t
+README.md
+t/110_parse_emiucp.t
+t/120_parse_error_emiucp.t
+t/210_parse_scts.t
+t/220_parse_error_scts.t
+t/230_format_scts.t
+t/310_parse_ddt.t
+t/320_parse_error_ddt.t
+t/330_format_ddt.t
+t/410_parse_vp.t
+t/420_parse_error_vp.t
+t/430_format_vp.t
 t/test.pl
 xt/check_changes.t
 xt/consistent_version_numbers.t

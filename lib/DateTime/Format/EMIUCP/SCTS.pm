@@ -1,35 +1,28 @@
-package DateTime::Format::EMIUCP;
+package DateTime::Format::EMIUCP::SCTS;
 
 =head1 NAME
 
-DateTime::Format::EMIUCP - Parse time formats for EMI-UCP protocol
+DateTime::Format::EMIUCP::SCTS - Parse SCTS field for EMI-UCP protocol
 
 =head1 SYNOPSIS
 
-  use DateTime::Format::EMIUCP;
+  use DateTime::Format::EMIUCP::SCTS;
 
-  my $scts = DateTime::Format::EMIUCP->parse_datetime('030212065530');
-  print $scts->ymd; # 2012-02-03
-  print $scts->hms; # 06:55:30
+  my $dt = DateTime::Format::EMIUCP::SCTS->parse_datetime('030212065530');
+  print $dt->ymd; # 2012-02-03
+  print $dt->hms; # 06:55:30
 
-  my $vp = DateTime::Format::EMIUCP->parse_datetime('0302120655');
-  print $vp->ymd; # 2012-02-03
-  print $vp->hms; # 06:55:00
+  $dt->set_formatter(DateTime::Format::EMIUCP::SCTS->new);
+  print $dt; # 030212065530
 
 =head1 DESCRIPTION
 
-These formats are part of EMI-UCP protocol message. EMI-UCP protocol is
+This format is a part of EMI-UCP protocol message. EMI-UCP protocol is
 primarily used to connect to short message service centers (SMSCs) for mobile
 telephones.
 
 SCTS is a string of 12 numeric characters which represents Service Center
 time-stamp in ddMMyyHHmmss format.
-
-DDT is a string of 10 numeric characters which represents deferred delivery
-time in ddMMyyHHmm format.
-
-VP is a string of 10 numeric characters which represents validity period time
-in ddMMyyHHmm format.
 
 See EMI-UCP Interface 5.2 Specification for further explanations.
 
@@ -44,6 +37,8 @@ use warnings;
 
 our $VERSION = '0.0200';
 
+use DateTime::Format::EMIUCP;
+
 =head1 METHODS
 
 =over
@@ -57,8 +52,6 @@ Year number below 70 means the date before year 2000.
 
 If given a string that doesn't match the pattern, the formatter will croak.
 
-=back
-
 =cut
 
 use DateTime::Format::Builder (
@@ -69,21 +62,28 @@ use DateTime::Format::Builder (
                 regex  => qr/^(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)$/,
                 postprocess => \&_fix_year,
             },
-            {
-                params => [qw( day month year hour minute )],
-                regex  => qr/^(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)$/,
-                postprocess => \&_fix_year,
-            },
         ]
     }
 );
 
 
-sub _fix_year {
-    my %args = @_;
-    my ($date, $p) = @args{qw( input parsed )};
-    $p->{year} += $p->{year} > 69 ? 1900 : 2000;
-    return 1;
+BEGIN { *_fix_year = \&DateTime::Format::EMIUCP::_fix_year; }
+
+
+=item Str I<$scts> = $fmt->format_datetime(DateTime I<$dt>)
+
+Given a DateTime object, this methods returns a string formatted in the
+object's format.
+
+=back
+
+=cut
+
+sub format_datetime {
+    my ($self, $dt) = @_;
+    return sprintf '%02d%02d%02d%02d%02d%02d',
+        $dt->day, $dt->month, $dt->year % 100,
+        $dt->hour, $dt->minute, $dt->second;
 };
 
 
@@ -105,8 +105,7 @@ L<DateTime::Format::Builder>
 
 =head1 SEE ALSO
 
-L<DateTime::Format::EMIUCP::DDT>, L<DateTime::Format::EMIUCP::SCTS>,
-L<DateTime::Format::EMIUCP::VP>, L<DateTime>.
+L<DateTime>.
 
 =head1 BUGS
 
