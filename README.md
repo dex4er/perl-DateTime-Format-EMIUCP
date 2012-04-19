@@ -23,6 +23,9 @@ telephones.
 SCTS is a string of 12 numeric characters which represents Service Center
 time-stamp in ddMMyyHHmmss format.
 
+DSCTS is a string of 12 numeric characters which represents Delivery
+time-stamp in ddMMyyHHmmss format.
+
 DDT is a string of 10 numeric characters which represents deferred delivery
 time in ddMMyyHHmm format.
 
@@ -48,8 +51,11 @@ If given a string that doesn't match the pattern, the formatter will croak.
 
 # SEE ALSO
 
-[DateTime::Format::EMIUCP::DDT](http://search.cpan.org/perldoc?DateTime::Format::EMIUCP::DDT), [DateTime::Format::EMIUCP::SCTS](http://search.cpan.org/perldoc?DateTime::Format::EMIUCP::SCTS),
-[DateTime::Format::EMIUCP::VP](http://search.cpan.org/perldoc?DateTime::Format::EMIUCP::VP), [DateTime](http://search.cpan.org/perldoc?DateTime).
+[DateTime::Format::EMIUCP::DDT](http://search.cpan.org/perldoc?DateTime::Format::EMIUCP::DDT),
+[DateTime::Format::EMIUCP::DSCTS](http://search.cpan.org/perldoc?DateTime::Format::EMIUCP::DSCTS),
+[DateTime::Format::EMIUCP::SCTS](http://search.cpan.org/perldoc?DateTime::Format::EMIUCP::SCTS),
+[DateTime::Format::EMIUCP::VP](http://search.cpan.org/perldoc?DateTime::Format::EMIUCP::VP),
+[DateTime](http://search.cpan.org/perldoc?DateTime).
 
 # BUGS
 

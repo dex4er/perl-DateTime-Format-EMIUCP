@@ -20,6 +20,9 @@ DESCRIPTION
     SCTS is a string of 12 numeric characters which represents Service
     Center time-stamp in ddMMyyHHmmss format.
 
+    DSCTS is a string of 12 numeric characters which represents Delivery
+    time-stamp in ddMMyyHHmmss format.
+
     DDT is a string of 10 numeric characters which represents deferred
     delivery time in ddMMyyHHmm format.
 
@@ -32,8 +35,8 @@ PREREQUISITES
     * DateTime::Format::Builder
 
 SEE ALSO
-    DateTime::Format::EMIUCP::DDT, DateTime::Format::EMIUCP::SCTS,
-    DateTime::Format::EMIUCP::VP, DateTime.
+    DateTime::Format::EMIUCP::DDT, DateTime::Format::EMIUCP::DSCTS,
+    DateTime::Format::EMIUCP::SCTS, DateTime::Format::EMIUCP::VP, DateTime.
 
 BUGS
     If you find the bug or want to implement new features, please report it
