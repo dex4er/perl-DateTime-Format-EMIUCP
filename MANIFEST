@@ -4,6 +4,7 @@ examples/dt2emiucp.pl
 examples/emiucp2dt.pl
 lib/DateTime/Format/EMIUCP.pm
 lib/DateTime/Format/EMIUCP/DDT.pm
+lib/DateTime/Format/EMIUCP/DSCTS.pm
 lib/DateTime/Format/EMIUCP/SCTS.pm
 lib/DateTime/Format/EMIUCP/VP.pm
 LICENSE
@@ -25,6 +26,9 @@ t/330_format_ddt.t
 t/410_parse_vp.t
 t/420_parse_error_vp.t
 t/430_format_vp.t
+t/510_parse_dscts.t
+t/520_parse_error_dscts.t
+t/530_format_dscts.t
 t/test.pl
 xt/check_changes.t
 xt/consistent_version_numbers.t

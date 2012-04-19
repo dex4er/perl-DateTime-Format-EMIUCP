@@ -30,19 +30,23 @@
    "provides" : {
       "DateTime::Format::EMIUCP" : {
          "file" : "lib/DateTime/Format/EMIUCP.pm",
-         "version" : "0.0200"
+         "version" : "0.0300"
       },
       "DateTime::Format::EMIUCP::DDT" : {
          "file" : "lib/DateTime/Format/EMIUCP/DDT.pm",
-         "version" : "0.0200"
+         "version" : "0.0300"
+      },
+      "DateTime::Format::EMIUCP::DSCTS" : {
+         "file" : "lib/DateTime/Format/EMIUCP/DSCTS.pm",
+         "version" : "0.0300"
       },
       "DateTime::Format::EMIUCP::SCTS" : {
          "file" : "lib/DateTime/Format/EMIUCP/SCTS.pm",
-         "version" : "0.0200"
+         "version" : "0.0300"
       },
       "DateTime::Format::EMIUCP::VP" : {
          "file" : "lib/DateTime/Format/EMIUCP/VP.pm",
-         "version" : "0.0200"
+         "version" : "0.0300"
       }
    },
    "release_status" : "stable",
@@ -57,5 +61,5 @@
          "url" : "http://github.com/dex4er/perl-DateTime-Format-EMIUCP"
       }
    },
-   "version" : "0.0200"
+   "version" : "0.0300"
 }
