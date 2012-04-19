@@ -1,4 +1,9 @@
 ------------------------------------------------------------------------
+0.0300 | Piotr Roszatycki <dexter@cpan.org> | 2012-04-19
+
+* New filter for DSCTS field for EMI-UCP protocol.
+
+------------------------------------------------------------------------
 0.0200 | Piotr Roszatycki <dexter@cpan.org> | 2012-04-15
 
 * Separate filters for SCTS, DDT and VP fields for EMI-UCP protocol.

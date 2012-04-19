@@ -26,8 +26,6 @@ time-stamp in ddMMyyHHmmss format.
 
 See EMI-UCP Interface 5.2 Specification for further explanations.
 
-=for readme stop
-
 =cut
 
 use 5.006;
@@ -35,7 +33,7 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '0.0200';
+our $VERSION = '0.0300';
 
 use DateTime::Format::EMIUCP;
 
@@ -90,8 +88,6 @@ sub format_datetime {
 1;
 
 __END__
-
-=for readme continue
 
 =head1 PREREQUISITES
 
